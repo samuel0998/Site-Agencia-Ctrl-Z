@@ -1,0 +1,274 @@
+.introduçao-bg {
+    background-color: var(--cor-12);
+    width: 100%;
+    height: 1200px; /* ajuste a altura da imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+.introduçao {
+    padding-top: 80px;
+    margin-top: 80px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#t-1 {
+  margin-top: 200px;
+}
+
+.introduçao h3 {
+    max-width: 80%;
+    text-align: center;
+}
+
+.texthover {
+    animation: color-change 20s infinite; /* animação de mudança de cor */
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: var(--cor-p1); /* cor inicial */
+    }
+    10% {
+      color: var(--cor-p2); /* cor da segunda letra */
+    }
+    20% {
+      color: var(--cor-p3); /* cor da terceira letra */
+    }
+    30% {
+        color: var(--cor-0); /* cor da terceira letra */
+      }
+      40% {
+        color: var(--cor-p1); /* cor da terceira letra */
+      }
+      50% {
+        color: var(--cor-p2); /* cor da terceira letra */
+      }
+      60% {
+        color: var(--cor-p3); /* cor da terceira letra */
+      }
+      70% {
+        color: var(--cor-0); /* cor da terceira letra */
+      }
+      80% {
+        color: var(--cor-p1); /* cor da terceira letra */
+      }
+    90% {
+      color: var(--cor-p2); /* cor final */
+    }
+    100% {
+      color: var(--cor-p3); /* cor final */
+    }
+  }
+  
+  .introduçao h1 {
+    font-size: 36px; /* ajuste o tamanho da fonte */
+    font-weight: bold; /* ajuste o peso da fonte */
+    text-align: center; /* centralize o texto */
+  }
+  
+  .introduçao h1 span {
+    animation-delay: calc(0.2s * var(--index)); /* delay para cada letra */
+  }
+  
+  .introduçao h1 span:nth-child(1) {
+    --index: 1;
+  }
+  
+  .introduçao h1 span:nth-child(2) {
+    --index: 2;
+  }
+  
+  .introduçao h1 span:nth-child(3) {
+    --index: 3;
+  }
+  .introduçao h1 span:nth-child(4) {
+    --index: 4;
+  }
+  .introduçao h1 span:nth-child(5) {
+    --index: 5;
+  }
+  .introduçao h1 span:nth-child(6) {
+    --index: 6;
+  }
+  .introduçao h1 span:nth-child(7) {
+    --index: 7;
+  }
+  .introduçao h1 span:nth-child(8) {
+    --index: 8;
+  }
+  .introduçao h1 span:nth-child(9) {
+    --index: 9;
+  }
+  .introduçao h1 span:nth-child(10) {
+    --index: 10;
+  }
+  .introduçao h1 span:nth-child(11) {
+    --index: 11;
+  }
+  .introduçao h1 span:nth-child(12) {
+    --index: 12;
+  }
+  .introduçao h1 span:nth-child(13) {
+    --index: 13;
+  }
+  .introduçao h1 span:nth-child(14) {
+    --index: 14;
+  }
+  .introduçao h1 span:nth-child(15) {
+    --index: 15;
+  }
+  .introduçao h1 span:nth-child(16) {
+    --index: 16;
+  }
+  .introduçao h1 span:nth-child(17) {
+    --index: 17;
+  }
+  .introduçao h1 span:nth-child(18) {
+    --index: 18;
+  }
+  .introduçao h1 span:nth-child(19) {
+    --index: 19;
+  }
+  .introduçao h1 span:nth-child(20) {
+    --index: 20;
+  }
+  .introduçao h1 span:nth-child(21) {
+    --index: 21;
+  }
+  .introduçao h1 span:nth-child(22) {
+    --index: 22;
+  }
+
+  .introduçao h1 span:nth-child(23) {
+    --index: 23;
+  }
+
+  .introduçao h1 span:nth-child(24) {
+    --index: 24;
+  }
+
+  .introduçao h1 span:nth-child(25) {
+    --index: 25;
+  }
+
+  .introduçao h1 span:nth-child(26) {
+    --index: 26;
+  }
+
+  .introduçao h1 span:nth-child(27) {
+    --index: 27;
+  }
+
+  .introduçao h1 span:nth-child(28) {
+    --index: 28;
+  }
+  .introduçao h1 span:nth-child(29) {
+    --index: 29;
+  }
+  .introduçao h1 span:nth-child(30) {
+    --index: 30;
+  }
+  .introduçao h1 span:nth-child(31) {
+    --index: 31;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-0);
+    border: 1px  solid var(--cor-p4);
+    border-radius: 10px;
+    padding:5px 0px 5px 5px;
+    height: 45px;
+    width: 38%; 
+  }
+
+  .search-bar input::placeholder {
+    font-size: 22px;
+    color: var(--cor-6);
+  }
+  
+  .search-bar input[type="search"] {
+    flex: 1;
+    padding: 5px;
+    border: none var(--cor-0);
+    border-color: var(--cor-0);
+    text-align: center;
+    background-color: var(--cor-0);
+  }
+  
+  .search-bar input[type="search"]:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: transparent; 
+  }
+
+.glass-bg {
+  height: 700px;
+  width: 1300px;
+  background: rgba(5, 110, 14, 0.142);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.glass-bg video {
+  height: 800px;
+  width: 1200px;
+}
+
+.carousel {
+  width: 1000px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+
+.carousel h2 {
+  margin-bottom: 20px;
+}
+
+
+.carousel-container {
+  display: flex;
+  margin: 0 -10px;
+  gap: 0 20px;
+  width: 400%;
+  animation: carousel 30s infinite linear;
+}
+
+.carousel-item {
+  width: 30%;
+  height: 140px;
+  padding: 0 10px;
+  object-fit: contain;
+  transform-origin: center center; /* Define o ponto de origem da transformação */
+  transform: scale(0.8); /* Diminui o tamanho da imagem em 80% */
+  transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.carousel-item:hover {
+  transform: scale(1); /* Volta ao tamanho original quando a imagem é hovereada */
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

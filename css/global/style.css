@@ -1,0 +1,16 @@
+/* estilo global */
+
+@import "./cores.css";
+@import "./global.css";
+@import "./tipografia.css";
+@import "./componentes.css";
+@import "./global/header.css";
+@import "./global/global.css";
+@import "./global/footer.css";
+/* home */
+
+
+@import "./home/introduçao.css";
+@import "./home/coment.css";
+@import "./home/cards.css";
+@import "./home/feadback.css";

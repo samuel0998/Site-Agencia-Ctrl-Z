@@ -1,0 +1,25 @@
+.cards-contenier-bg {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 700px; /* Ajuste a altura conforme necessário */
+    overflow: hidden; /* Esconde o conteúdo que sai do contêiner */
+    position: relative;
+}
+
+.carousel-cards {
+    position: relative;
+    
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.7s ease; /* Transição suave entre as imagens */
+}
+
+.carousel-item-cards {
+    min-width: 100%; /* Cada item ocupa 100% do contêiner */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

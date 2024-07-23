@@ -1,0 +1,150 @@
+.header-bg{
+    background-color: var(--cor-12);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.header img {
+    height: 70px;
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-menu a{
+    color: var(--cor-p1) ;
+    display: inline-block;
+    padding: 16px 0px ;
+    font-size: 18px;
+    position: relative;
+}
+ 
+ .header-menu a:hover::after {
+    width: 100%;
+}
+
+.header-menu a:hover{
+   color: var(--cor-0);
+}
+
+.dropdown-menu {
+    text-align: center;
+    position: absolute;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.5s, visibility 0.3s; 
+  }
+  
+  .dropdown {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-menu a {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-12);
+    border-radius: 5px;
+    padding: 5px;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: var(--cor-11);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1; 
+    visibility: visible; 
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+    #nav2{
+      display: none;
+    }
+
+    .header-bg {
+      height: 400px;
+      margin-bottom: 0px;
+      display: block;
+    }
+
+
+    .header-menu {
+        display: none;
+      }
+      
+      .header-menu.active {
+        display: block;
+      }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        top: 8%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        width: 30px; /* ajuste o valor de acordo com o tamanho do seu ícone */
+        height: 30px; /* ajuste o valor de acordo com o tamanho do seu ícone */
+      }
+      
+      .hamburger span {
+        display: block;
+        width: 30px;
+        height: 10px;
+        background-color: var(--cor-p1);
+        margin-bottom: 5px;
+        border-radius: 5px;
+      }
+      
+      .hamburger span:last-child {
+        margin-bottom: 0;
+      }
+
+    .hamburger {
+      width: 40px;
+      height: 40px;
+    }
+    .hamburger span {
+      width: 40px;
+      height: 7px;
+    }
+  }
+  
+  /* Disable dropdown menu on mobile devices */
+  @media only screen and (max-width: 768px) {
+    .dropdown-menu {
+      display: none;
+    }
+  }
