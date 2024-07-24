@@ -1,6 +1,6 @@
 .introduçao-bg {
     background-color: var(--cor-12);
-    width: 100%;
+    width: auto;
     height: 1200px; /* ajuste a altura da imagem */
     background-size: cover;
     background-position: center;
@@ -223,7 +223,7 @@
   }
 
 .glass-bg video {
-  height: 800px;
+  height: 100%;
   width: 1200px;
 }
 
@@ -272,3 +272,49 @@
     transform: translateX(-50%);
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .introduçao{
+    margin-top: 0px;
+  }
+
+
+  .introduçao h3 {
+    font-size:medium;
+  }
+
+  .search-bar  input {
+    display: none;
+
+  }
+  .search-bar {
+    background-color: var(--cor-12);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .glass-bg video {
+    max-width: 400px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .glass-bg{
+    height: 100%;
+    width: 120px;
+  }
+.carousel  {
+  width: 400px;
+  height: 250px;
+}
+
+
+
+
+
+
+}
+
+
+

@@ -29,11 +29,11 @@
   }
   
   .animate-up {
-    animation: slideUp 4s ease-in-out infinite;
+    animation: slideUp 5s ease-in-out infinite;
   }
   
   .animate-down {
-    animation: slideDown 4s ease-in-out infinite;
+    animation: slideDown 5s ease-in-out infinite;
   }
   
   @keyframes slideUp {
@@ -52,4 +52,35 @@
     100% {
       transform: translateY(0);
     }
+  }
+  @media only screen and (max-width: 768px) {
+    .feadback h2{
+        text-align: center;
+    }
+    .feadback-coment {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+
+      
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+
+    
+}
   }

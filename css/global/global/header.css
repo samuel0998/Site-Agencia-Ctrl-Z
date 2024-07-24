@@ -87,12 +87,25 @@ header {
   
   @media only screen and (max-width: 768px) {
 
+
+
+    
+
+    header {
+      position: static;
+      top: 0;
+    }
+    
+    #x2 {
+      display: none;
+    }
+
     #nav2{
       display: none;
     }
 
     .header-bg {
-      height: 400px;
+      height: 100px;
       margin-bottom: 0px;
       display: block;
     }
@@ -101,9 +114,16 @@ header {
     .header-menu {
         display: none;
       }
+
+    
       
       .header-menu.active {
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
       }
 
     .hamburger {
@@ -144,7 +164,9 @@ header {
   
   /* Disable dropdown menu on mobile devices */
   @media only screen and (max-width: 768px) {
-    .dropdown-menu {
-      display: none;
-    }
+  .dropdown-menu {
+    display: none;
   }
+ 
+  }
+  
