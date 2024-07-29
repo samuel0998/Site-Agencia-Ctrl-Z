@@ -1,0 +1,148 @@
+.intro-produtos-bg {
+    background-image: linear-gradient(to bottom, var(--cor-12),var(--cor-p5));
+    height: 1200px;
+}
+
+.intro-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    max-height:120px;
+    max-width: auto;
+    flex-wrap: nowrap;
+
+}
+
+.intro-produtos h1 span {
+    animation-delay: calc(0.2s * var(--index)); /* delay para cada letra */
+}
+
+.intro-produtos h1 span:nth-child(1) {
+    --index: 1;
+}
+
+.intro-produtos h1 span:nth-child(2) {
+    --index: 2;
+}
+
+.intro-produtos h1 span:nth-child(3) {
+    --index: 3;
+}
+
+.intro-produtos h1 span:nth-child(4) {
+    --index: 4;
+}
+
+.intro-produtos h1 span:nth-child(5) {
+    --index: 5;
+}
+
+.intro-produtos h1 span:nth-child(6) {
+    --index: 6;
+}
+
+.intro-produtos h1 span:nth-child(7) {
+    --index: 7;
+}
+
+.intro-produtos h1 span:nth-child(8) {
+    --index: 8;
+}
+
+.intro-produtos h1 span:nth-child(9) {
+    --index: 9;
+}
+
+.intro-produtos h1 span:nth-child(10) {
+    --index: 10;
+}
+
+.intro-produtos h1 span:nth-child(11) {
+    --index: 11;
+}
+
+.intro-produtos h1 span:nth-child(12) {
+    --index: 12;
+}
+
+.intro-produtos h1 span:nth-child(13) {
+    --index: 13;
+}
+
+.intro-produtos h1 span:nth-child(14) {
+    --index: 14;
+}
+
+.intro-produtos h1 span:nth-child(15) {
+    --index: 15;
+}
+
+.intro-produtos h1 span:nth-child(16) {
+    --index: 16;
+}
+
+.intro-produtos h1 span:nth-child(17) {
+    --index: 17;
+}
+
+.intro-produtos h1 span:nth-child(18) {
+    --index: 18;
+}
+
+.intro-produtos h1 span:nth-child(19) {
+    --index: 19;
+}
+
+.intro-produtos h1 span:nth-child(20) {
+    --index: 20;
+}
+
+.intro-produtos h1 span:nth-child(21) {
+    --index: 21;
+}
+
+.intro-produtos h1 span:nth-child(22) {
+    --index: 22;
+}
+
+.intro-produtos h1 span:nth-child(23) {
+    --index: 23;
+}
+
+.intro-produtos h1 span:nth-child(24) {
+    --index: 24;
+}
+
+.intro-produtos h1 span:nth-child(25) {
+    --index: 25;
+}
+
+.intro-produtos h1 span:nth-child(26) {
+    --index: 26;
+}
+
+.intro-produtos h1 span:nth-child(27) {
+    --index: 27;
+}
+
+.intro-produtos h1 span:nth-child(28) {
+    --index: 28;
+}
+
+.intro-produtos h1 span:nth-child(29) {
+    --index: 29;
+}
+
+.intro-produtos h1 span:nth-child(30) {
+    --index: 30;
+}
+
+.intro-produtos h1 span:nth-child(31) {
+    --index: 31;
+}
+
+
+

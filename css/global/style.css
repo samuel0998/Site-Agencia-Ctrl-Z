@@ -14,3 +14,8 @@
 @import "./home/coment.css";
 @import "./home/cards.css";
 @import "./home/feadback.css";
+
+
+/* Produtos */
+
+@import "../Produtos/produtos.css"
