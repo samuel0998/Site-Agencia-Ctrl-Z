@@ -7,6 +7,15 @@ body{
     
 }
 
+.bodygradient-bg{
+    margin: 0px;
+    font-family: Arial;
+    height: 100%;
+    width: auto;
+    background-image: linear-gradient(to top, var(--cor-12),var(--cor-p5));
+
+}
+
 ul{
     margin: 0px;
     list-style-type: style none;

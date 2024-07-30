@@ -1,18 +1,14 @@
 .intro-produtos-bg {
-    background-image: linear-gradient(to bottom, var(--cor-12),var(--cor-p5));
-    height: 1200px;
+    height: 800px;
 }
 
 .intro-produtos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: flex ;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
-    max-height:120px;
-    max-width: auto;
-    flex-wrap: nowrap;
+    height: 600px;
 
 }
 
@@ -145,4 +141,63 @@
 }
 
 
+.glass {
+    height: 600px;
+    width: 1050px;
+    background: rgba(5, 110, 14, 0.142);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards-produtos {
+    height: 800px;
+    width: 100%;
+    background: rgba(1, 83, 8, 0.142);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 40px;
+    align-items: center;
+}
+
+.cards-produtos h1 {
+    margin-bottom: 20px;
+}
+
+.cards-produtos video {
+    height: 600px;
+    width: 800px;
+}
+
+
+#videointro {
+    height: 700px;
+    width: 1000px;
+}
+
+.produtos-bg {
+    height: auto;
+}
+
+
+.produtos {
+    margin-top: 60px;
+}
 
