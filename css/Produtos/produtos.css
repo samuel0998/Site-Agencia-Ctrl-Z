@@ -276,140 +276,67 @@
    margin-right: 10px;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
 
+body {
+    margin-left: 10px ;
+    margin-right: 10px;
+}
 
 .glass{
     height: auto;
     align-items: center;
+    width: auto;
 }
 .intro-produtos .glass {
-    width: 510px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
 }
 
 .intro-produtos video{
     max-height: 300px;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .cards-produtos video {
-    max-width: 510px;
+    max-width: 400px;
     max-height: 300px;
     
 }
 .produtos .glass {
+    width: 400px;
     display: flex;
     align-items: center;
 }
 
 .dominio{
-   height: 350px;
+   height: auto;
 }
 
 .hospedagem {
-    height: 250px;
+    height: auto;
 }
 
 
-
-
-.conteudo {
-
+.conteudo {  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
 
+.text-conteudo {
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    font-size: small;
+    width: 350px;
+}
+
+.produtos-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
 
   }
-
-
-  @media only screen and (max-width: 768px) {
-
-
-
-    
-
-    header {
-      position: static;
-      top: 0;
-    }
-    
-    #x2 {
-      display: none;
-    }
-
-    #nav2{
-      display: none;
-    }
-
-    .header-bg {
-      height: 100px;
-      margin-bottom: 0px;
-      display: block;
-    }
-
-
-    .header-menu {
-        display: none;
-      }
-
-    
-      
-      .header-menu.active {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-      }
-
-    .hamburger {
-        position: absolute;
-        display: block;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        top: 8%;
-        left: 90%;
-        transform: translate(-50%, -50%);
-        width: 30px; /* ajuste o valor de acordo com o tamanho do seu ícone */
-        height: 30px; /* ajuste o valor de acordo com o tamanho do seu ícone */
-      }
-      
-      .hamburger span {
-        display: block;
-        width: 30px;
-        height: 10px;
-        background-color: var(--cor-p1);
-        margin-bottom: 5px;
-        border-radius: 5px;
-      }
-      
-      .hamburger span:last-child {
-        margin-bottom: 0;
-      }
-
-    .hamburger {
-      width: 40px;
-      height: 40px;
-    }
-    .hamburger span {
-      width: 40px;
-      height: 7px;
-    }
-  }
-  
-  /* Disable dropdown menu on mobile devices */
-  @media only screen and (max-width: 768px) {
-  .dropdown-menu {
-    display: none;
-  }
- 
-  }
-  
-
-  
