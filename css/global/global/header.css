@@ -84,10 +84,16 @@ header {
     opacity: 1; 
     visibility: visible; 
   }
+
+  #x1{
+    display:none;
+  }
   
   @media only screen and (max-width: 768px) {
 
-
+    #x1{
+      display: flex;
+    }
 
     
 

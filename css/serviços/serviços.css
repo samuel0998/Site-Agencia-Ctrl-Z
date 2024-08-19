@@ -1,0 +1,268 @@
+
+.serviços-bg  {
+    height:auto;
+    background-color: var(--cor-12);
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.serviços-bg h1  {
+    background-color: var(--cor-0);
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 2s infinite linear;
+  animation: stroke 8s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay:-6s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: var(--cor-p5);
+  -webkit-animation-delay: -6s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay:-6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: var(--cor-p5);
+  -webkit-animation-delay: -6s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.bloop {
+    position: relative; /* Para posicionar o pseudo-elemento */
+    background-color: #00ff43; /* Cor de fundo do bloop */
+    border-radius: 20%; /* Arredondar a forma */
+    width: 1200px; /* Largura do bloop */
+    height: 600px; /* Altura do bloop */
+    display: flex; /* Usar flexbox para centralizar o conteúdo */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: space-around; /* Centralizar horizontalmente */
+    overflow: hidden; /* Esconder conteúdo que ultrapassa a borda */
+}
+
+/* Adicionando um pseudo-elemento para criar um efeito de blob */
+.bloop::before {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento */
+    top: -100%; /* Move para cima */
+    left: -50%; /* Move para a esquerda */
+    width: 300%; /* Aumenta a largura */
+    height: 100%; /* Aumenta a altura */
+    background-color: var(--cor-12); /* Cor do efeito */
+    border-radius: 50%; /* Arredondar a forma */
+    transform: rotate(120deg); /* Rotaciona para criar um efeito irregular */
+    z-index: 0; /* Coloca atrás do conteúdo */
+}
+
+/* Estilizando o conteúdo dentro do bloop */
+.bloop h2, .bloop p  {
+    position: relative; /* Para garantir que o texto fique acima do pseudo-elemento */
+    z-index: 1; /* Coloca o texto acima do fundo do bloop */
+    text-align: center; /* Centraliza o texto */
+}
+
+.bloop a {
+  position: relative; /* Para garantir que a imagem fique acima do pseudo-elemento */
+  z-index: 1; /* Coloca a imagem acima do fundo do bloop */
+}
+
+.bloop-img {
+    position: relative; /* Para garantir que a imagem fique acima do pseudo-elemento */
+    z-index: 1; /* Coloca a imagem acima do fundo do bloop */
+    max-width: 80%; /* Limita a largura da imagem */
+    max-height: 80%; /* Limita a altura da imagem */
+    border-radius: 15%; /* Arredonda os cantos da imagem, se desejado */
+}
+
+.serviços {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-bloop {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ gap: 10px;
+ width: 300px;
+}
+
+
+.bloop img {
+  height: 900px;
+  width: 600px;
+ 
+}
+
+#bloop2 {
+    position: relative; /* Para posicionar o pseudo-elemento */
+    background-color: #000000; /* Cor de fundo do bloop */
+    border-radius: 10%; /* Arredondar a forma */
+    width: 1200px; /* Largura do bloop */
+    height: 1200px; /* Altura do bloop */
+    display: flex; /* Usar flexbox para centralizar o conteúdo */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: space-around; /* Centralizar horizontalmente */
+    overflow: hidden; /* Esconder conteúdo que ultrapassa a borda */
+}
+
+
+#bloop2::before {
+  content: '';
+  position: absolute; /* Posiciona o pseudo-elemento */
+  top: -100%; /* Move para cima */
+  left: -50%; /* Move para a esquerda */
+  width: 300%; /* Aumenta a largura */
+  height: 100%; /* Aumenta a altura */
+  background-color: #00ff43; /* Cor do efeito */
+  border-radius: 30%; /* Arredondar a forma */
+  transform: rotate(120deg); /* Rotaciona para criar um efeito irregular */
+  z-index: 0; /* Coloca atrás do conteúdo */
+}
+
+#bloop-text2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ width: 700px;
+ gap: 40px;
+}
+
+#bloop-text2 h2 {
+  margin-bottom: 50px;
+}
+
+
+
+#bloop2 h2, #bloop2 p ,#bloop2 ul , #bloop2 li {
+  position: relative; /* Para garantir que o texto fique acima do pseudo-elemento */
+  z-index: 1; /* Coloca o texto acima do fundo do bloop */
+  text-align: center; /* Centraliza o texto */
+
+}
+
+#bloop2 li:hover {
+  color: var(--cor-0);
+  transition: 0.5s ;
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  body {
+      margin-left: 10px ;
+      margin-right: 10px;
+  }
+
+
+  .title {
+    font-size: larger;
+    font: 600 4rem/1.125 "Poppins", sans-serif;
+    height: 200px;
+
+  }
+
+
+.bloop {
+  width: 400px; 
+  height: 300px;
+}
+
+.bloop h2 {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.bloop p{
+  font: 500 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.botao2 {
+  background-color: var(--cor-p5);
+  color: var(--cor-p1);
+  padding: 6px;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: "Popins";
+  font-weight: 300;
+  max-width: max-content;
+}
+
+#bloop2 {
+  width: 400px; 
+  height: 1200px;
+}
+#bloop2::before{
+  top: -100%; /* Move para cima */
+  left: -50%; /* Move para a esquerda */
+  width: 500%; /* Aumenta a largura */
+  height: 400%; /* Aumenta a altura */
+}
+
+.bloop img {
+  height: 300px;
+  width: 200px;
+ 
+}
+
+#title-bloop{
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+}
+

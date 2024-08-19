@@ -4,6 +4,7 @@ body{
     height: 100%;
     width: auto;
     background-color: black;
+    cursor: url('../mao.png'), auto;
     
 }
 

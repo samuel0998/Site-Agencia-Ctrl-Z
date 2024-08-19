@@ -142,19 +142,6 @@
 }
 
 
-.glass {
-    height: 600px;
-    width: 1050px;
-    background: rgba(5, 110, 14, 0.142);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .cards-produtos {
     text-align: center;
@@ -259,7 +246,7 @@
 }
 
 .card-final-bg{
-    background-color: var(--cor-11);
+    background-color: var(--cor-12);
     height: 500px;
     display: flex;
     align-items: center;
@@ -310,6 +297,7 @@ body {
 }
 
 .dominio{
+    margin-top: 50px;
    height: auto;
 }
 
@@ -338,5 +326,12 @@ body {
     margin-bottom: 20px;
     margin-top: 0px;
 }
+
+.card-final {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
 
   }

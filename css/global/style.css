@@ -19,3 +19,11 @@
 /* Produtos */
 
 @import "../Produtos/produtos.css";
+
+/* Serviços */
+
+@import "../serviços/serviços.css";
+
+/* projetos */
+
+@import "../projetos/projetos.css";

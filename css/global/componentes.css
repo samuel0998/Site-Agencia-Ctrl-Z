@@ -56,8 +56,8 @@
 }
 
 .botao2 {
-    background-color: var(--cor-10);
-    color: var(--cor-2);
+    background-color: var(--cor-p5);
+    color: var(--cor-p1);
     padding: 16px;
     display: inline-block;
     border-radius: 4px;
@@ -72,7 +72,7 @@
 }
 
 .botao2:hover {
-    background-color: var(--cor-9);
+    background-color: var(--cor-12);
 }
 
 .botao.seta::after{
@@ -110,3 +110,29 @@
     width: 100%;
     background-color: var(--cor-10);
 }
+
+
+
+.glass {
+    height: 600px;
+    width: 1050px;
+    background: rgba(5, 110, 14, 0.142);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta2::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent var(--cor-12);
+   margin-right: 10px;
+  }

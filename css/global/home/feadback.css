@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    height: 500px;
+    height: 400px;
     background: linear-gradient(to bottom, var(--cor-12), var(--cor-p2));
     background-size: 200% 200%; 
     background-position: 0% -200%; 
@@ -29,11 +29,11 @@
   }
   
   .animate-up {
-    animation: slideUp 5s ease-in-out infinite;
+    animation: slideUp 6s ease-in-out infinite;
   }
   
   .animate-down {
-    animation: slideDown 5s ease-in-out infinite;
+    animation: slideDown 6s ease-in-out infinite;
   }
   
   @keyframes slideUp {
@@ -60,6 +60,8 @@
     .feadback-coment {
       display: grid;
       grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
     }
 
 
@@ -75,10 +77,10 @@
   
   @keyframes slideDown {
     0% {
-      transform: translateY(-100%);
+      transform: translateY(0);
     }
     100% {
-      transform: translateY(0);
+      transform: translatex(-100%);
     }
 
     

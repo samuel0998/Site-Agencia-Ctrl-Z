@@ -1,0 +1,106 @@
+.serviços-bg  {
+    height: 1200px;
+    background-color: var(--cor-12);
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.serviços-bg h1  {
+    background-color: var(--cor-0);
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 2s infinite linear;
+  animation: stroke 8s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay:-6s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: var(--cor-p5);
+  -webkit-animation-delay: -6s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay:-6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: var(--cor-p5);
+  -webkit-animation-delay: -6s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: var(--cor-p1);
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.bloop {
+    position: relative; /* Para posicionar o pseudo-elemento */
+    background-color: #00ff43; /* Cor de fundo do bloop */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 20%; /* Arredondar a forma */
+    width: auto; /* Largura do bloop */
+    height: 600px; /* Altura do bloop */
+    display: flex; /* Usar flexbox para centralizar o conteúdo */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    overflow: hidden; /* Esconder conteúdo que ultrapassa a borda */
+}
+
+/* Adicionando um pseudo-elemento para criar um efeito de blob */
+.bloop::before {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento */
+    top: -100%; /* Move para cima */
+    left: -50%; /* Move para a esquerda */
+    width: 200%; /* Aumenta a largura */
+    height: 200%; /* Aumenta a altura */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor do efeito */
+    border-radius: 50%; /* Arredondar a forma */
+    transform: rotate(120deg); /* Rotaciona para criar um efeito irregular */
+    z-index: 0; /* Coloca atrás do conteúdo */
+}
+
+/* Estilizando o conteúdo dentro do bloop */
+.bloop h2, .bloop p {
+    position: relative; /* Para garantir que o texto fique acima do pseudo-elemento */
+    z-index: 1; /* Coloca o texto acima do fundo do bloop */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
